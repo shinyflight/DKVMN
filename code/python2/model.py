@@ -1,3 +1,5 @@
+# heonseok will change mxnet to TF in model
+
 import mxnet as mx
 import mxnet.ndarray as nd
 import ast as ast
