@@ -1,0 +1,303 @@
+/home/shinyflight/anaconda3/envs/python27/bin/python /home/shinyflight/Project/DKVMN/code/python2/main.py
+Training with gpu(1) ...
+	load 	STATICS
+	show 	True
+	memory_value_state_dim 	100
+	data_name 	STATICS
+	seqlen 	200
+	dataset 	STATICS
+	n_question 	1223
+	memory_size 	50
+	gpus 	1
+	data_dir 	../../data/STATICS
+	q_embed_dim 	50
+	lr 	0.01
+	test 	False
+	save 	STATICS
+	momentum 	0.9
+	max_iter 	50
+	init_std 	0.1
+	qa_embed_dim 	100
+	batch_size 	10
+	final_fc_dim 	50
+	memory_key_state_dim 	50
+	init_lr 	0.01
+	final_lr 	1e-05
+	maxgradnorm 	50.0
+	ctx 	gpu(1)
+	train_test 	True
+
+
+train_q_data.shape (648, 200)
+train_qa_data.shape (648, 200)
+valid_q_data.shape (128, 200)
+valid_qa_data.shape (128, 200)
+
+
+init_memory_key_weight (50, 50)
+qa_embed_weight (2447, 100)
+final_fc_bias (1,)
+DKVMN->value_head:erase_signal_bias (100,)
+init_memory_value (50, 100)
+input_embed_content_bias (50,)
+read_content_embed_weight (50, 150)
+q_embed_weight (1224, 50)
+DKVMN->value_head:add_signal_bias (100,)
+input_embed_content_weight (50, 50)
+DKVMN->value_head:erase_signal_weight (100, 100)
+DKVMN->value_head:add_signal_weight (100, 100)
+final_fc_weight (1, 50)
+read_content_embed_bias (50,)
+
+
+epoch 1
+valid_auc	0.615146854672 	train_auc	0.509587851388
+valid_accuracy	0.773691786228 	train_accuracy	0.755668163273
+valid_loss	0.527615606785 	train_loss	0.563191652298
+2017-07-25 17:54:19,084 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0001.params"
+epoch 2
+valid_auc	0.773088553015 	train_auc	0.715512164811
+valid_accuracy	0.79723266936 	train_accuracy	0.773386893833
+valid_loss	0.447187960148 	train_loss	0.494809627533
+2017-07-25 17:54:28,707 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0002.params"
+epoch 3
+valid_auc	0.779707329622 	train_auc	0.774378788127
+valid_accuracy	0.799461392023 	train_accuracy	0.784608629854
+valid_loss	0.441424161196 	train_loss	0.459762513638
+2017-07-25 17:54:38,265 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0003.params"
+epoch 4
+valid_auc	0.781975758508 	train_auc	0.777458075223
+valid_accuracy	0.800807911965 	train_accuracy	0.785120888127
+valid_loss	0.439096689224 	train_loss	0.456839442253
+2017-07-25 17:54:47,890 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0004.params"
+epoch 5
+valid_auc	0.781804947437 	train_auc	0.775031823285
+valid_accuracy	0.801690114686 	train_accuracy	0.785328717147
+valid_loss	0.439418524504 	train_loss	0.45694988966
+2017-07-25 17:54:57,471 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0005.params"
+epoch 6
+valid_auc	0.783891317395 	train_auc	0.777771558
+valid_accuracy	0.798439894136 	train_accuracy	0.784425336078
+valid_loss	0.439347505569 	train_loss	0.456476062536
+2017-07-25 17:55:07,043 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0006.params"
+epoch 7
+valid_auc	0.789384815665 	train_auc	0.783762890463
+valid_accuracy	0.801690114686 	train_accuracy	0.787671232877
+valid_loss	0.4360447824 	train_loss	0.451373845339
+2017-07-25 17:55:16,663 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0007.params"
+epoch 8
+valid_auc	0.796720801761 	train_auc	0.790193676159
+valid_accuracy	0.793378836421 	train_accuracy	0.79065396211
+valid_loss	0.44692876935 	train_loss	0.445889860392
+2017-07-25 17:55:26,251 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0008.params"
+epoch 9
+valid_auc	0.804511855144 	train_auc	0.799773642316
+valid_accuracy	0.806751172401 	train_accuracy	0.793958352787
+valid_loss	0.4226603508 	train_loss	0.438653707504
+2017-07-25 17:55:35,876 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0009.params"
+epoch 10
+valid_auc	0.80782609474 	train_auc	0.808312350148
+valid_accuracy	0.788596369039 	train_accuracy	0.795987493486
+valid_loss	0.442692518234 	train_loss	0.431965082884
+2017-07-25 17:55:45,468 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0010.params"
+epoch 11
+valid_auc	0.808652870804 	train_auc	0.809158496067
+valid_accuracy	0.803779542183 	train_accuracy	0.796708139654
+valid_loss	0.427129268646 	train_loss	0.431200414896
+2017-07-25 17:55:55,065 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0011.params"
+epoch 12
+valid_auc	0.811446470624 	train_auc	0.813664114129
+valid_accuracy	0.80521892557 	train_accuracy	0.798294714918
+valid_loss	0.417834311724 	train_loss	0.427410215139
+2017-07-25 17:56:04,691 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0012.params"
+epoch 13
+valid_auc	0.811467587293 	train_auc	0.813625182531
+valid_accuracy	0.804661744904 	train_accuracy	0.798693929189
+valid_loss	0.419766426086 	train_loss	0.42708286643
+2017-07-25 17:56:14,296 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0013.params"
+epoch 14
+valid_auc	0.810803748183 	train_auc	0.819122413007
+valid_accuracy	0.80693689929 	train_accuracy	0.801079385236
+valid_loss	0.423349738121 	train_loss	0.4216157794
+2017-07-25 17:56:23,941 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0014.params"
+epoch 15
+valid_auc	0.811610251014 	train_auc	0.818938648197
+valid_accuracy	0.803361656684 	train_accuracy	0.799693918496
+valid_loss	0.418965131044 	train_loss	0.422730773687
+2017-07-25 17:56:33,578 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0015.params"
+epoch 16
+valid_auc	0.812646851655 	train_auc	0.81797519222
+valid_accuracy	0.804754608348 	train_accuracy	0.800779618544
+valid_loss	0.418244153261 	train_loss	0.423161923885
+2017-07-25 17:56:43,200 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0016.params"
+epoch 17
+valid_auc	0.812538922699 	train_auc	0.820784766314
+valid_accuracy	0.807679806844 	train_accuracy	0.800734371369
+valid_loss	0.41782823205 	train_loss	0.421117395163
+2017-07-25 17:56:52,863 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0017.params"
+epoch 18
+valid_auc	0.813785070877 	train_auc	0.822146604817
+valid_accuracy	0.806472582068 	train_accuracy	0.801762937233
+valid_loss	0.421030759811 	train_loss	0.419276595116
+2017-07-25 17:57:02,500 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0018.params"
+epoch 19
+valid_auc	0.813792661796 	train_auc	0.822265346617
+valid_accuracy	0.8075869434 	train_accuracy	0.800266808467
+valid_loss	0.415442198515 	train_loss	0.420026689768
+2017-07-25 17:57:12,101 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0019.params"
+epoch 20
+valid_auc	0.813211380858 	train_auc	0.823172254613
+valid_accuracy	0.805776106236 	train_accuracy	0.80167937655
+valid_loss	0.418844550848 	train_loss	0.418176949024
+2017-07-25 17:57:21,682 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0020.params"
+2017-07-25 17:57:21,818 - root - INFO - Update[1281]: Change learning rate to 6.67000e-03
+epoch 21
+valid_auc	0.813529226738 	train_auc	0.826236117676
+valid_accuracy	0.807447648233 	train_accuracy	0.80282663082
+valid_loss	0.418263614178 	train_loss	0.415956765413
+2017-07-25 17:57:31,292 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0021.params"
+epoch 22
+valid_auc	0.814395367227 	train_auc	0.826781858646
+valid_accuracy	0.808422714398 	train_accuracy	0.803783940189
+valid_loss	0.415197044611 	train_loss	0.415241628885
+2017-07-25 17:57:40,919 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0022.params"
+epoch 23
+valid_auc	0.813248670555 	train_auc	0.828640345752
+valid_accuracy	0.805590379347 	train_accuracy	0.803677895364
+valid_loss	0.427955657244 	train_loss	0.413433134556
+2017-07-25 17:57:50,491 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0023.params"
+epoch 24
+valid_auc	0.814696048888 	train_auc	0.828805916102
+valid_accuracy	0.807911965455 	train_accuracy	0.804271989553
+valid_loss	0.415214598179 	train_loss	0.413572013378
+2017-07-25 17:58:00,211 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0024.params"
+epoch 25
+valid_auc	0.813656844063 	train_auc	0.830009767285
+valid_accuracy	0.808376282676 	train_accuracy	0.804760175434
+valid_loss	0.416905224323 	train_loss	0.412248700857
+2017-07-25 17:58:09,782 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0025.params"
+epoch 26
+valid_auc	0.81443360502 	train_auc	0.830216770402
+valid_accuracy	0.801225797465 	train_accuracy	0.805058927656
+valid_loss	0.42282885313 	train_loss	0.41203224659
+2017-07-25 17:58:19,389 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0026.params"
+epoch 27
+valid_auc	0.813683156786 	train_auc	0.831639856524
+valid_accuracy	0.806101128291 	train_accuracy	0.805675347708
+valid_loss	0.419311404228 	train_loss	0.410536110401
+2017-07-25 17:58:28,999 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0027.params"
+epoch 28
+valid_auc	0.814313283104 	train_auc	0.830913911459
+valid_accuracy	0.807215489623 	train_accuracy	0.80552211927
+valid_loss	0.416306555271 	train_loss	0.410138934851
+2017-07-25 17:58:38,583 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0028.params"
+epoch 29
+valid_auc	0.814254809017 	train_auc	0.832890837975
+valid_accuracy	0.808840599898 	train_accuracy	0.805947360091
+valid_loss	0.42122477293 	train_loss	0.409172862768
+2017-07-25 17:58:48,275 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0029.params"
+epoch 30
+valid_auc	0.814558568909 	train_auc	0.832906984303
+valid_accuracy	0.808562009565 	train_accuracy	0.80666200792
+valid_loss	0.418812453747 	train_loss	0.409498751163
+2017-07-25 17:58:57,836 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0030.params"
+epoch 31
+valid_auc	0.814109245602 	train_auc	0.83381679824
+valid_accuracy	0.80823698751 	train_accuracy	0.807709497207
+valid_loss	0.416124731302 	train_loss	0.408362150192
+2017-07-25 17:59:07,405 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0031.params"
+epoch 32
+valid_auc	0.813631337836 	train_auc	0.835792736093
+valid_accuracy	0.808004828899 	train_accuracy	0.80778903834
+valid_loss	0.416388124228 	train_loss	0.406432271004
+2017-07-25 17:59:16,986 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0032.params"
+epoch 33
+valid_auc	0.812791756328 	train_auc	0.835998699065
+valid_accuracy	0.809351348842 	train_accuracy	0.80926248035
+valid_loss	0.417054712772 	train_loss	0.404982298613
+2017-07-25 17:59:26,677 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0033.params"
+epoch 34
+valid_auc	0.812227534949 	train_auc	0.836632106981
+valid_accuracy	0.806008264847 	train_accuracy	0.808643240423
+valid_loss	0.418330579996 	train_loss	0.405270308256
+2017-07-25 17:59:36,342 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0034.params"
+epoch 35
+valid_auc	0.812147968819 	train_auc	0.837789584139
+valid_accuracy	0.809072758509 	train_accuracy	0.809432819127
+valid_loss	0.41737651825 	train_loss	0.404034107924
+2017-07-25 17:59:45,962 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0035.params"
+epoch 36
+valid_auc	0.811191088219 	train_auc	0.838338171067
+valid_accuracy	0.807726238566 	train_accuracy	0.808592914842
+valid_loss	0.426925003529 	train_loss	0.403861194849
+2017-07-25 17:59:55,580 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0036.params"
+epoch 37
+valid_auc	0.812375659453 	train_auc	0.838426181528
+valid_accuracy	0.807865533733 	train_accuracy	0.809080748813
+valid_loss	0.417699724436 	train_loss	0.403871059418
+2017-07-25 18:00:05,223 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0037.params"
+epoch 38
+valid_auc	0.811160662978 	train_auc	0.839110317097
+valid_accuracy	0.80415099596 	train_accuracy	0.809582755508
+valid_loss	0.422306478024 	train_loss	0.402371644974
+2017-07-25 18:00:14,875 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0038.params"
+epoch 39
+valid_auc	0.810645170005 	train_auc	0.840776240758
+valid_accuracy	0.804336722849 	train_accuracy	0.810191796164
+valid_loss	0.420350193977 	train_loss	0.400842398405
+2017-07-25 18:00:24,496 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0039.params"
+epoch 40
+valid_auc	0.811497329166 	train_auc	0.840250843016
+valid_accuracy	0.80651901379 	train_accuracy	0.810415693601
+valid_loss	0.420397430658 	train_loss	0.401186943054
+2017-07-25 18:00:34,051 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0040.params"
+2017-07-25 18:00:34,189 - root - INFO - Update[2561]: Change learning rate to 4.44889e-03
+epoch 41
+valid_auc	0.809592858069 	train_auc	0.841407421398
+valid_accuracy	0.808933463342 	train_accuracy	0.810794725389
+valid_loss	0.425498455763 	train_loss	0.40060415864
+2017-07-25 18:00:43,662 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0041.params"
+epoch 42
+valid_auc	0.804353960333 	train_auc	0.842508823546
+valid_accuracy	0.808144124066 	train_accuracy	0.811635147066
+valid_loss	0.428273677826 	train_loss	0.399036437273
+2017-07-25 18:00:53,382 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0042.params"
+epoch 43
+valid_auc	0.810834013356 	train_auc	0.843023738239
+valid_accuracy	0.805683242791 	train_accuracy	0.812453966567
+valid_loss	0.421775639057 	train_loss	0.398422718048
+2017-07-25 18:01:03,040 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0043.params"
+epoch 44
+valid_auc	0.809585488783 	train_auc	0.843720821354
+valid_accuracy	0.80888703162 	train_accuracy	0.811760213822
+valid_loss	0.421278744936 	train_loss	0.397528231144
+2017-07-25 18:01:12,674 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0044.params"
+epoch 45
+valid_auc	0.808975050835 	train_auc	0.844469304078
+valid_accuracy	0.805590379347 	train_accuracy	0.812476138152
+valid_loss	0.424482166767 	train_loss	0.396722108126
+2017-07-25 18:01:22,298 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0045.params"
+epoch 46
+valid_auc	0.808561373449 	train_auc	0.844047863563
+valid_accuracy	0.805776106236 	train_accuracy	0.812576046069
+valid_loss	0.423197627068 	train_loss	0.397056400776
+2017-07-25 18:01:31,863 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0046.params"
+epoch 47
+valid_auc	0.810521301966 	train_auc	0.843953107838
+valid_accuracy	0.802572317407 	train_accuracy	0.812027203279
+valid_loss	0.426412433386 	train_loss	0.397773146629
+2017-07-25 18:01:41,433 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0047.params"
+epoch 48
+valid_auc	0.808796020886 	train_auc	0.844629304124
+valid_accuracy	0.807447648233 	train_accuracy	0.812035834727
+valid_loss	0.423797518015 	train_loss	0.396736830473
+2017-07-25 18:01:51,052 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0048.params"
+epoch 49
+valid_auc	0.805037450874 	train_auc	0.844556847927
+valid_accuracy	0.8071690579 	train_accuracy	0.81281513584
+valid_loss	0.42970046401 	train_loss	0.396759688854
+2017-07-25 18:02:00,770 - root - INFO - Saved checkpoint to "model/STATICS/b10_q50_qa100_m50_std0.1_lr0.01_gn50.0_f50_s224-0049.params"
+epoch 50
+valid_auc	0.808633471789 	train_auc	0.845502448761
+valid_accuracy	0.80586896968 	train_accuracy	0.81241138721
+valid_loss	0.428016364574 	train_loss	0.395274579525
